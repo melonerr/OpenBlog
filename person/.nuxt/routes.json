@@ -1,0 +1,23 @@
+[
+  {
+    "name": "docs",
+    "path": "/docs",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\docs.vue",
+    "chunkName": "pages/docs",
+    "_name": "_3dd7cc7c"
+  },
+  {
+    "name": "new",
+    "path": "/new",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\new.vue",
+    "chunkName": "pages/new",
+    "_name": "_136c35ef"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1b8b3a61"
+  }
+]
