@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import ClassicEditor from "@ckeditor/ckeditor5";
 import CKEditor from "@ckeditor/ckeditor5-vue";
 import MyUploadAdapter from "./MyUploadAdapter.js";
 
@@ -38,7 +38,9 @@ export default {
             "underline",
             "italic",
             "fontColor",
+            "|",
             "code",
+            "codeblock",
             "link",
             "bulletedList",
             "numberedList",
@@ -53,22 +55,33 @@ export default {
         language: "en",
         codeBlock: {
           languages: [
-            // Do not render the CSS class for the plain text code blocks.
-            { language: "plaintext", label: "Plain text", class: "" },
-
-            // Use the "php-code" class for PHP code blocks.
+            { language: "HTML", label: "HTML", class: "HTML-code" },
+            { language: "CSS", label: "CSS", class: "CSS-code" },
+            { language: "Javascript", label: "Javascript", class: "javascript-code"},
+            { language: "Angular", label: "Angular", class: "Angular-code" },
+            { language: "React", label: "React", class: "React-code" },
+            { language: "Vue", label: "Vue", class: "Vue-code" },
+            { language: "Django", label: "Django", class: "django-code" },
+            { language: "Flank", label: "Flank", class: "flank-code" },
+            { language: "SQL", label: "SQL", class: "sql-code" },
+            { language: "CMD", label: "CMD", class: "cmd-code" },
             { language: "php", label: "PHP", class: "php-code" },
-
-            // Use the "js" class for JavaScript code blocks.
-            // Note that only the first ("js") class will determine the language of the block when loading data.
+            { language: "python", label: "Python", class: "Python-code" },
+            { language: "Ruby", label: "Ruby", class: "ruby-code" },
+            { language: "GO", label: "GO", class: "GO-code" },
+            { language: "Flutter", label: "Flutter", class: "flutter-code" },
+            { language: "Dart", label: "Dart", class: "dart-code" },
             {
-              language: "javascript",
-              label: "JavaScript",
-              class: "js javascript js-code",
+              language: "typescript",
+              label: "Typescript",
+              class: "typescript-code",
             },
-
-            // Python code blocks will have the default "language-python" CSS class.
-            { language: "python", label: "Python" },
+            { language: "Laravel", label: "Laravel", class: "laravel-code" },
+            {
+              language: "Codeigniter",
+              label: "Codeigniter",
+              class: "codeigniter-code",
+            },
           ],
         },
       },
