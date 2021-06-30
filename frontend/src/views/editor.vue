@@ -5,20 +5,24 @@
       <ckeditor
         id="ckeditor"
         :editor="editor"
-        @ready="onReady"
+        @ready="addImage"
         v-model="editorData"
         :config="editorConfig"
       >
       </ckeditor>
-      <button @click.prevent="axiosTest()">test</button>
+      <button @click.prevent="BlogData()">test</button>
+      <button @click.prevent="addclass()">class</button>
     </div>
   </div>
 </template>
 
 <script>
+// import axios from "axios";
+
 import ClassicEditor from "@ckeditor/ckeditor5";
 import CKEditor from "@ckeditor/ckeditor5-vue";
-import MyUploadAdapter from "./MyUploadAdapter.js";
+import MyUploadAdapter from "./js/MyUploadAdapter.js";
+import MySaveBlogAdapter from "./js/MySaveBlogAdapter.js";
 
 export default {
   components: {
@@ -28,7 +32,8 @@ export default {
   data() {
     return {
       editor: ClassicEditor,
-      editorData: "",
+      editorData:
+        "<p></p><img src='http://127.0.0.1/teach/image/blog/placeholder.png'>",
       editorConfig: {
         toolbar: {
           items: [
@@ -57,7 +62,11 @@ export default {
           languages: [
             { language: "HTML", label: "HTML", class: "HTML-code" },
             { language: "CSS", label: "CSS", class: "CSS-code" },
-            { language: "Javascript", label: "Javascript", class: "javascript-code"},
+            {
+              language: "Javascript",
+              label: "Javascript",
+              class: "javascript-code",
+            },
             { language: "Angular", label: "Angular", class: "Angular-code" },
             { language: "React", label: "React", class: "React-code" },
             { language: "Vue", label: "Vue", class: "Vue-code" },
@@ -87,12 +96,40 @@ export default {
       },
     };
   },
+  // updated() {
+  //   // var Addclass = document.getElementsByTagName("img");
+  //   document.getElementsByTagName("img").className = "mystyle";
+  //   console.log('updated');
+  //   // Addclass.classList.add("img-blog");
+  // },
 
   methods: {
-    onReady(editor) {
+    addImage(editor) {
       editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
         return new MyUploadAdapter(loader);
       };
+    },
+    BlogData() {
+      var length = document.getElementsByTagName("img").length;
+      var todayDate = new Date().toISOString().slice(0, 19);
+      var date = todayDate.replace("T", " ");
+      var writer = "Mr.JR";
+      var data = this.editorData;
+      var imgData = [];
+      for (let i = 0; i < length; i++) {
+        document.getElementsByTagName("img")[i].classList.add("img-blog");
+        var OldImgName = document.getElementsByTagName("img")[i].src;
+        var NewImgName = OldImgName.replace(
+          "http://127.0.0.1/teach/tmp/",
+          "http://127.0.0.1/teach/Upload/"
+        );
+        document.getElementsByTagName("img")[i].src = NewImgName;
+
+        imgData.push(document.getElementsByTagName("img")[i].src);
+      }
+      console.log(data);
+      var Blogdata = { data, writer, date, length };
+      MySaveBlogAdapter.saveData(Blogdata, imgData);
     },
   },
 };

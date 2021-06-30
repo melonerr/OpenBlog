@@ -1,7 +1,6 @@
 <template>
   <div class="Card">
     <div class="container">
-      Card
       <MDBCard>
         <MDBCardBody>
           <MDBCardTitle>Card title</MDBCardTitle>
