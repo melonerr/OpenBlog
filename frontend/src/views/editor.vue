@@ -96,13 +96,6 @@ export default {
       },
     };
   },
-  // updated() {
-  //   // var Addclass = document.getElementsByTagName("img");
-  //   document.getElementsByTagName("img").className = "mystyle";
-  //   console.log('updated');
-  //   // Addclass.classList.add("img-blog");
-  // },
-
   methods: {
     addImage(editor) {
       editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
