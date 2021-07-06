@@ -74,7 +74,7 @@ export default {
             { language: "Flank", label: "Flank", class: "flank-code" },
             { language: "SQL", label: "SQL", class: "sql-code" },
             { language: "CMD", label: "CMD", class: "cmd-code" },
-            { language: "php", label: "PHP", class: "php-code" },
+            { language: "PHP", label: "PHP", class: "php-code" },
             { language: "python", label: "Python", class: "Python-code" },
             { language: "Ruby", label: "Ruby", class: "ruby-code" },
             { language: "GO", label: "GO", class: "GO-code" },
