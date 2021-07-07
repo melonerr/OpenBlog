@@ -7,10 +7,13 @@ use App\Models\blogs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class UsersController extends BaseController
+class BlogsController extends BaseController
 {
-    public function insert()
+    public function insert(Request $request)
     {
+        // Waiting save to DB 
+        $request;
+        return response()->json($request);
     }
     public function preview()
     {

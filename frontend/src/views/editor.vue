@@ -10,7 +10,7 @@
         :config="editorConfig"
       >
       </ckeditor>
-      <button @click.prevent="BlogData()">test</button>
+      <button @click.prevent="BlogData()">Submit</button>
       <button @click.prevent="addclass()">class</button>
     </div>
   </div>
@@ -32,8 +32,7 @@ export default {
   data() {
     return {
       editor: ClassicEditor,
-      editorData:
-        "<p></p><img src='http://127.0.0.1/teach/image/blog/placeholder.png'>",
+      editorData: "",
       editorConfig: {
         toolbar: {
           items: [
@@ -103,26 +102,13 @@ export default {
       };
     },
     BlogData() {
-      var length = document.getElementsByTagName("img").length;
       var todayDate = new Date().toISOString().slice(0, 19);
       var date = todayDate.replace("T", " ");
       var writer = "Mr.JR";
+      var status = "private";
       var data = this.editorData;
-      var imgData = [];
-      for (let i = 0; i < length; i++) {
-        document.getElementsByTagName("img")[i].classList.add("img-blog");
-        var OldImgName = document.getElementsByTagName("img")[i].src;
-        var NewImgName = OldImgName.replace(
-          "http://127.0.0.1/teach/tmp/",
-          "http://127.0.0.1/teach/Upload/"
-        );
-        document.getElementsByTagName("img")[i].src = NewImgName;
-
-        imgData.push(document.getElementsByTagName("img")[i].src);
-      }
-      console.log(data);
-      var Blogdata = { data, writer, date, length };
-      MySaveBlogAdapter.saveData(Blogdata, imgData);
+      var Blogdata = { data, writer, date, status };
+      MySaveBlogAdapter.saveData(Blogdata);
     },
   },
 };

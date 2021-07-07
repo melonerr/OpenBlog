@@ -6,7 +6,7 @@ use App\Models\users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class UsersController extends BaseController
+class RegisterController extends BaseController
 {
     public function register()
     {

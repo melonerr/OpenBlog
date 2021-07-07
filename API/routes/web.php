@@ -8,7 +8,8 @@ $router->get('/', function () use ($router) {
 
 $router->get('/users', 'MainController@Users');
 $router->get('/categories', 'MainController@categories');
-$router->post('/imageupload', 'ImageUploadController@ProfileUploadImage');
+$router->post('/imgblogcontent', 'ImageUploadController@BlogUploadImageContent');
+$router->post('/blog-insert', 'BlogsController@insert');
 
 
 // Authorization user 

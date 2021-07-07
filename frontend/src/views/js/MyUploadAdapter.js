@@ -12,8 +12,8 @@ class MyUploadAdapter {
         const data = new FormData();
         data.append("file", await this.loader.file);
         const res = await axios({
-            url: `http://127.0.0.1/teach/test.php`,
-            method: "POST",
+            url: `http://localhost:8081/imgblogcontent`,
+            method: "post",
             data,
             headers: {
                 'accept': 'application/json',

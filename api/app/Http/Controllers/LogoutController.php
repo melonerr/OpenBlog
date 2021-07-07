@@ -6,7 +6,7 @@ use App\Models\users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class UsersController extends BaseController
+class LogoutController extends BaseController
 {
     public function logout()
     {
