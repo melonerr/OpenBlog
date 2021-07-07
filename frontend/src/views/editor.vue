@@ -34,6 +34,9 @@ export default {
       editor: ClassicEditor,
       editorData: "",
       editorConfig: {
+        image: {
+          toolbar: ["imageTextAlternative"],
+        },
         toolbar: {
           items: [
             "heading",
@@ -113,8 +116,11 @@ export default {
   },
 };
 </script>
-<style>
+<style >
 .ck-editor__editable {
   min-height: 500px;
+}
+.image > figcaption {
+  display: none !important;
 }
 </style>
