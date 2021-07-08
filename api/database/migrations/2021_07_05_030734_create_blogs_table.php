@@ -21,8 +21,7 @@ class CreateBlogsTable extends Migration
             $table->string('blogs_user');
             $table->string('blogs_permalink');
             $table->string('blogs_status');
-            $table->dateTime('blogs_date_edit');
-            $table->dateTime('blogs_date_create');
+            $table->timestamps();
         });
     }
 

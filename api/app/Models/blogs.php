@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Models;
-use Illuminate\Database\Eloquent\Model;
 
+use Illuminate\Database\Eloquent\Model;
 
 class blogs extends Model
 {
@@ -10,6 +10,11 @@ class blogs extends Model
     protected $table   = 'blogs';
     // คอลัมน์ที่ทำการแก้ไขได้
     protected $fillable = [
-        'blogs_title', 'blogs_content', 'blogs_img_cover', 'blogs_user', 'blogs_permalink', 'blogs_status',
+        'blogs_title',
+        'blogs_content',
+        'blogs_img_cover',
+        'blogs_user',
+        'blogs_permalink',
+        'blogs_status',
     ];
 }

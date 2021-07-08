@@ -20,7 +20,7 @@ class CreateLoginlogsTable extends Migration
             $table->string('login_ip_address');
             $table->string('login_device');
             $table->string('login_status');
-            $table->dateTime('login_date');
+            $table->timestamps();
         });
     }
 

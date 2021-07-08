@@ -2,6 +2,16 @@
   <div id="app">
     <h1>TEst Editor page in vue js</h1>
     <div class="container">
+      <div class="">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            v-model="blogContent"
+            placeholder="Title..."
+          />
+        </div>
+      </div>
       <ckeditor
         id="ckeditor"
         :editor="editor"
@@ -10,8 +20,8 @@
         :config="editorConfig"
       >
       </ckeditor>
-      <button @click.prevent="BlogData()">Submit</button>
-      <button @click.prevent="addclass()">class</button>
+      <button class="m-2" @click.prevent="BlogData()">Submit</button>
+      <button class="m-2" @click.prevent="addclass()">class</button>
     </div>
   </div>
 </template>
@@ -31,11 +41,18 @@ export default {
 
   data() {
     return {
+      blogContent: "",
       editor: ClassicEditor,
       editorData: "",
       editorConfig: {
         image: {
-          toolbar: ["imageTextAlternative"],
+          toolbar: [
+            "imageTextAlternative",
+            "|",
+            "imageStyle:full",
+            "imageStyle:side",
+          ],
+          styles: ["full", "side"],
         },
         toolbar: {
           items: [
@@ -107,10 +124,11 @@ export default {
     BlogData() {
       var todayDate = new Date().toISOString().slice(0, 19);
       var date = todayDate.replace("T", " ");
-      var writer = "Mr.JR";
-      var status = "private";
+      var writer = "200";
+      var status = 1;
       var data = this.editorData;
-      var Blogdata = { data, writer, date, status };
+      var title = this.blogContent;
+      var Blogdata = { data, writer, date, title, status };
       MySaveBlogAdapter.saveData(Blogdata);
     },
   },
