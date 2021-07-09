@@ -11,12 +11,12 @@ $router->get('/categories', 'MainController@categories');
 
 //********* Blogs user ************
 $router->get('/blog', 'BlogsController@getAll');
-$router->get('/blog/{title}', 'BlogsController@getTitle');
+$router->get('/blog-title/{title}', 'BlogsController@getTitle');
 //***********************************
 
 //********* Blogs Member ************
 $router->get('/blog-member', 'BlogsController@getAllmember');
-$router->get('/blog-member/{title}', 'BlogsController@getTitlemember');
+$router->get('/blog-member-title/{title}', 'BlogsController@getTitlemember');
 $router->post('/blog-insert', 'BlogsController@insert');
 $router->post('/blog-edit/{id}', 'BlogsController@edite');
 $router->post('/blog-update', 'BlogsController@update');

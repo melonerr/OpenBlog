@@ -21,13 +21,17 @@ class BlogsController extends BaseController
     // ********** User *************
     public function getAll()
     {
-        $blog = blogs::all()->where('blogs_status', 1);
+        $blog = blogs::where('blogs_status', 1)->paginate(10);
         return response()->json($blog);
     }
 
     public function getTitle($title)
     {
-        $blog = blogs::all()->where('blogs_title', $title)->where('blogs_status', 1);
+        $blog = blogs::where([
+            ['blogs_title', $title],
+            ['blogs_status', 1]
+        ])->get();
+
         return response()->json($blog);
     }
     // ********** End User ***********
@@ -36,13 +40,20 @@ class BlogsController extends BaseController
     // ********** member *************
     public function getAllmember()
     {
-        $blog = blogs::all()->whereNotIn('blogs_status', 4)->where('blogs_user', 200);
+        $blog = blogs::where([
+            ['blogs_status', '!=', 4],
+            ['blogs_user', 200]
+        ])->paginate(1);
         return response()->json($blog);
     }
 
     public function getTitlemember($title)
     {
-        $blog = blogs::all()->where('blogs_title', $title)->whereNotIn('blogs_status', 4)->where('blogs_user', 200);
+        $blog = blogs::where([
+            ['blogs_title', $title],
+            ['blogs_status', '!=', 4],
+            ['blogs_user', 200]
+        ])->get();
         return response()->json($blog);
     }
 
