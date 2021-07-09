@@ -28,10 +28,19 @@ export default {
           data += "<table width='100%' border='1'>";
           // tr
           data += "<tr>";
-          data += "<td width='30%'>";
+          data += "<td width='100%' colspan='2'>";
+          data +=
+            "<a href='./blogs?id=" +
+            response.data.data[i].blogs_id +
+            "'>Go to Blog</a>";
+          data += "</td>";
+          data += "</tr>";
+          // tr
+          data += "<tr>";
+          data += "<td  width='30%'>";
           data += "blogs_id";
           data += "</td>";
-          data += "<td width='70%'>";
+          data += "<td  width='70%'>";
           data += response.data.data[i].blogs_id;
           data += "</td>";
           data += "</tr>";
@@ -120,7 +129,7 @@ export default {
 .image > img {
   width: 50% !important;
 }
-pre{
+pre {
   padding: 15px;
   margin: 15px;
   text-align: start;

@@ -11,7 +11,7 @@ $router->get('/categories', 'MainController@categories');
 
 //********* Blogs user ************
 $router->get('/blog', 'BlogsController@getAll');
-$router->get('/blog-title/{title}', 'BlogsController@getTitle');
+$router->get('/blog/id/{id}', 'BlogsController@getID');
 //***********************************
 
 //********* Blogs Member ************

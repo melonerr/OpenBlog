@@ -25,10 +25,10 @@ class BlogsController extends BaseController
         return response()->json($blog);
     }
 
-    public function getTitle($title)
+    public function getID($id)
     {
         $blog = blogs::where([
-            ['blogs_title', $title],
+            ['blogs_id', $id],
             ['blogs_status', 1]
         ])->get();
 
