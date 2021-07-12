@@ -17,7 +17,7 @@ class BlogsController extends BaseController
     // 4 Delete
     // **********  status  **********
 
-
+    // test 
     // ********** User *************
     public function getAll()
     {
