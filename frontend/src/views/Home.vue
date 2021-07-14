@@ -8,10 +8,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-6 col-xxl-5 d-flex">
+          <div class="col-xl-12 col-xxl-12 d-flex">
             <div class="w-100">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title mb-4">All Page</h5>
@@ -24,6 +24,8 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title mb-4">
@@ -39,7 +41,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title mb-4">
@@ -54,6 +56,8 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title mb-4">
@@ -72,14 +76,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6 col-xxl-7">
+          <div class="col-xl-12 col-xxl-12">
             <div class="card flex-fill w-100">
-              <div class="card-header">
+              <!-- <div class="card-header">
                 <h5 class="card-title mb-0">Visitors</h5>
-              </div>
+              </div> -->
               <div class="card-body py-3">
                 <div class="chart chart-sm">
-                  <MonthlyChart />
+                  <MultiColumn></MultiColumn>
                 </div>
               </div>
             </div>
@@ -88,15 +92,13 @@
         <div class="row">
           <div class="col-12 col-md-6 col-xxl-4 d-flex order-2 order-xxl-3">
             <div class="card flex-fill w-100">
-              <div class="card-header">
+              <!-- <div class="card-header">
                 <h5 class="card-title mb-0">Browser Usage</h5>
-              </div>
+              </div> -->
               <div class="card-body d-flex">
                 <div class="align-self-center w-100">
-                  <div class="py-3">
-                    <div class="chart chart-xs">
-                      <canvas id="chartjs-dashboard-pie"></canvas>
-                    </div>
+                  <div class="chart chart-xs">
+                    <PieChart></PieChart>
                   </div>
 
                   <table class="table mb-0">
@@ -129,7 +131,14 @@
                 <h5 class="card-title mb-0">Thailand</h5>
               </div>
               <div class="card-body px-4 pt-0">
-                <div id="thailand-map" style="height: 450px"></div>
+                <div id="thailand-map" class="text-center" style="height: 80%">
+                  <!-- <object
+                    data="../assets/img/map/th-all.svg"
+                    type="image/svg+xml"
+                    id="map-svg"
+                  ></object> -->
+                  <img src="../assets/img/map/th-all.svg" id="map-svg">
+                </div>
               </div>
             </div>
           </div>
@@ -138,13 +147,49 @@
               <div class="card-header">
                 <h5 class="card-title mb-0">Top 10 country</h5>
               </div>
-              <div class="card-body d-flex">
+              <div class="card-body d-flex pt-0">
                 <div class="align-self-center w-100">
                   <table class="table mb-0 mt-0">
                     <tbody>
                       <tr>
-                        <td></td>
-                        <td class="text-right"></td>
+                        <td>Thailand</td>
+                        <td class="text-right">211</td>
+                      </tr>
+                      <tr>
+                        <td>United States</td>
+                        <td class="text-right">195</td>
+                      </tr>
+                      <tr>
+                        <td>Russia</td>
+                        <td class="text-right">125</td>
+                      </tr>
+                      <tr>
+                        <td>Japan</td>
+                        <td class="text-right">110</td>
+                      </tr>
+                      <tr>
+                        <td>Poland</td>
+                        <td class="text-right">95</td>
+                      </tr>
+                      <tr>
+                        <td>France</td>
+                        <td class="text-right">83</td>
+                      </tr>
+                      <tr>
+                        <td>Finland</td>
+                        <td class="text-right">62</td>
+                      </tr>
+                      <tr>
+                        <td>Iceland</td>
+                        <td class="text-right">60</td>
+                      </tr>
+                      <tr>
+                        <td>Greece</td>
+                        <td class="text-right">52</td>
+                      </tr>
+                      <tr>
+                        <td>Greenland</td>
+                        <td class="text-right">51</td>
                       </tr>
                     </tbody>
                   </table>
@@ -294,12 +339,28 @@
   </div>
 </template>
 <script>
-import MonthlyChart from "../components/chart/MonthlyChart.vue";
+// Chart
+import MultiColumn from "../components/chart/MultiColumn.vue";
+import PieChart from "../components/chart/PieChart.vue";
 export default {
   name: "Home",
   components: {
-    MonthlyChart,
+    MultiColumn,
+    PieChart,
   },
+  data() {
+    return {
+      myHtmlCode: "<b>123456789</b>",
+    };
+  },
+  mounted() {},
 };
 </script>
+<style>
+#map-svg {
+  width: 60%;
+  text-align: center;
+}
+
+</style>
 

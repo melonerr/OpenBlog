@@ -11,7 +11,7 @@
 
           <li class="sidebar-item active">
             <a class="sidebar-link" href="/">
-              <i class="align-middle" data-feather="sliders"></i>
+              <i class="align-middle" data-feather="home"></i>
               <span class="align-middle">Home</span>
             </a>
           </li>
@@ -25,7 +25,7 @@
 
           <li class="sidebar-item">
             <a class="sidebar-link" href="/editor">
-              <i class="align-middle" data-feather="credit-card"></i>
+              <i class="align-middle" data-feather="edit-3"></i>
               <span class="align-middle">Editor</span>
             </a>
           </li>
@@ -34,6 +34,13 @@
             <a class="sidebar-link" href="/blogs-all">
               <i class="align-middle" data-feather="book"></i>
               <span class="align-middle">All Blogs</span>
+            </a>
+          </li>
+          
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/chart">
+              <i class="align-middle" data-feather="pie-chart"></i>
+              <span class="align-middle">Chart</span>
             </a>
           </li>
 

@@ -21,6 +21,7 @@
         "@ckeditor/ckeditor5-dev-webpack-plugin": "^25.2.4",
         "@ckeditor/ckeditor5-vue": "^2.0.1",
         "core-js": "^3.6.5",
+        "highcharts-vue": "^1.4.0",
         "mdbvue": "6.7.2",
         "mdb-vue-ui-kit": "1.0.0-beta6",
         "postcss-loader": "^3.0.0",

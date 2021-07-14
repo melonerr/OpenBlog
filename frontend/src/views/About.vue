@@ -1,49 +1,34 @@
 <template>
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-xl-6 col-xxl-6">
-        <video width="320" height="240" controls>
-          <source src="../assets/videos/001.mp4" type="video/mp4" />
-        </video>
+  <div id="about">
+    <div class="m-5">
+      <MultiColumn></MultiColumn>
+    </div>
+    <div class="row m-5">
+      <div class="col-md-4">
+        <PieChart></PieChart>
       </div>
-      <div class="col-xl-6 col-xxl-6">
-        <div class="card flex-fill w-100">
-          <div class="card-header">
-            <h5 class="card-title mb-0">Visitors</h5>
-          </div>
-          <div class="card-body py-3">
-            <div class="chart chart-sm">
-              <MonthlyChart :styles="myStyles" />
-            </div>
-          </div>
-        </div>
+      <div class="col-md-4">
+        <ThMap></ThMap>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import VueCoreVideoPlayer from "vue-core-video-player";
-import MonthlyChart from "../components/chart/MonthlyChart.vue";
+import MultiColumn from "../components/chart/MultiColumn.vue";
+import PieChart from "../components/chart/PieChart.vue";
+import ThMap from "../components/chart/ThMap.vue";
 export default {
-  name: "App",
+  name: "about",
   components: {
-    // VueCoreVideoPlayer,
-    MonthlyChart,
-  },
-  computed: {
-    myStyles() {
-      return {
-        height: `300px`,
-        position: "relative",
-      };
-    },
+    MultiColumn,
+    PieChart,
+    ThMap,
   },
 };
 </script>
 <style>
-.chart canvas {
-  max-height: 100%;
-  font-size: 50px;
+path {
+  /* display: none; */
 }
 </style>

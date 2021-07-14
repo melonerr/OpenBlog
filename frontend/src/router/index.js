@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import editor from "../views/editor.vue";
 import Blogs from "../views/Blogs.vue";
 import BlogsAll from "../views/BlogsAll.vue";
+import Chart from "../views/Chart.vue";
 
 const routes = [{
         path: "/",
@@ -23,6 +24,11 @@ const routes = [{
         path: "/blogs-all",
         name: "blogsall",
         component: BlogsAll,
+    },
+    {
+        path: "/chart",
+        name: "chart",
+        component: Chart,
     },
     {
         path: "/about",
