@@ -125,15 +125,18 @@ export default {
   },
 };
 </script>
-<style >
+<style>
 .image > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50% !important;
 }
 pre {
-  padding: 15px;
-  margin: 15px;
-  text-align: start;
-  background-color: #444444;
-  color: white;
+  padding: 15px !important;
+  margin: 15px !important;
+  text-align: start !important;
+  background-color: #444444 !important;
+  color: white !important;
 }
 </style>
