@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <h1>TEst Editor page in vue js</h1>
-
     <div class="container">
       <div class="">
         <div class="form-group">
@@ -70,6 +69,9 @@ export default {
             "insertTable",
             "undo",
             "redo",
+            "subscript",
+            "superscript",
+            "specialCharacters",
           ],
         },
         language: "en",
@@ -127,6 +129,11 @@ export default {
       var Blogdata = { data, writer, date, title, status };
       MySaveBlogAdapter.saveData(Blogdata);
     },
+  },
+  mounted() {
+    console.log(123);
+    // console.log(this.editor.defaultConfig.toolbar);
+    console.log(456);
   },
 };
 </script>

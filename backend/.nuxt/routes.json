@@ -2,22 +2,22 @@
   {
     "name": "docs",
     "path": "/docs",
-    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\docs.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\backend\\\\pages\\\\docs.vue",
     "chunkName": "pages/docs",
-    "_name": "_3dd7cc7c"
+    "_name": "_59494fae"
   },
   {
     "name": "new",
     "path": "/new",
-    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\new.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\backend\\\\pages\\\\new.vue",
     "chunkName": "pages/new",
-    "_name": "_136c35ef"
+    "_name": "_b6bbfebc"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\person\\\\pages\\\\index.vue",
+    "component": "C:\\\\xampp\\\\htdocs\\\\New_WWW\\\\OpenBlog\\\\backend\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_1b8b3a61"
+    "_name": "_36792454"
   }
 ]

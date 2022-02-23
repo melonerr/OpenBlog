@@ -7,9 +7,7 @@
       <div class="col-md-4">
         <PieChart></PieChart>
       </div>
-      <div class="col-md-4">
-        <ThMap></ThMap>
-      </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
 </template>
@@ -17,18 +15,13 @@
 <script>
 import MultiColumn from "../components/chart/MultiColumn.vue";
 import PieChart from "../components/chart/PieChart.vue";
-import ThMap from "../components/chart/ThMap.vue";
+
 export default {
   name: "about",
   components: {
     MultiColumn,
     PieChart,
-    ThMap,
   },
 };
 </script>
-<style>
-path {
-  /* display: none; */
-}
-</style>
+<style></style>

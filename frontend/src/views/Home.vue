@@ -28,9 +28,7 @@
                 <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title mb-4">
-                        Page View <small>(30 day)</small>
-                      </h5>
+                      <h5 class="card-title mb-4">Page View <small>(30 day)</small></h5>
                       <h1 class="mt-1 mb-3">251</h1>
                       <div class="mb-1">
                         <span class="text-success">
@@ -44,9 +42,7 @@
                 <div class="col-sm-6 col-md-3">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title mb-4">
-                        Visitors <small>(30 day)</small>
-                      </h5>
+                      <h5 class="card-title mb-4">Visitors <small>(30 day)</small></h5>
                       <h1 class="mt-1 mb-3">84</h1>
                       <div class="mb-1">
                         <span class="text-success">
@@ -90,11 +86,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 col-xxl-4 d-flex order-2 order-xxl-3">
+          <div class="col-12 col-md-6 col-xxl-4 d-flex">
             <div class="card flex-fill w-100">
-              <!-- <div class="card-header">
-                <h5 class="card-title mb-0">Browser Usage</h5>
-              </div> -->
               <div class="card-body d-flex">
                 <div class="align-self-center w-100">
                   <div class="chart chart-xs">
@@ -125,24 +118,19 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-xxl-4 d-flex order-3 order-xxl-2">
+          <div class="col-12 col-md-6 col-xxl-4 d-flex">
             <div class="card flex-fill w-100">
               <div class="card-header">
                 <h5 class="card-title mb-0">Thailand</h5>
               </div>
               <div class="card-body px-4 pt-0">
                 <div id="thailand-map" class="text-center" style="height: 80%">
-                  <!-- <object
-                    data="../assets/img/map/th-all.svg"
-                    type="image/svg+xml"
-                    id="map-svg"
-                  ></object> -->
-                  <img src="../assets/img/map/th-all.svg" id="map-svg">
+                  <img src="../assets/img/map/th-all.svg" id="map-svg" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xxl-4 d-flex order-1 order-xxl-1">
+          <div class="col-12 col-md-6 col-xxl-4 d-flex">
             <div class="card flex-fill">
               <div class="card-header">
                 <h5 class="card-title mb-0">Top 10 country</h5>
@@ -197,9 +185,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-xl-12 col-xxl-12 d-flex">
+          <div class="col-12 col-md-12 col-xxl-12 d-flex">
             <div class="card flex-fill">
               <div class="card-header">
                 <h5 class="card-title mb-0">Top 10</h5>
@@ -223,111 +209,75 @@
                 <tbody>
                   <tr>
                     <td>Project Apollo</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">54</td>
                     <td>
                       <span class="badge bg-success text-center">Done</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      Vanessa Tucker
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">Vanessa Tucker</td>
                   </tr>
                   <tr>
                     <td>Project Fireball</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">42</td>
                     <td>
                       <span class="badge bg-danger text-center">Cancelled</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      William Harris
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">William Harris</td>
                   </tr>
                   <tr>
                     <td>Project Hades</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">31</td>
                     <td>
                       <span class="badge bg-success text-center">Done</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      Sharon Lessman
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">Sharon Lessman</td>
                   </tr>
                   <tr>
                     <td>Project Nitro</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">30</td>
                     <td>
-                      <span class="badge bg-warning text-center"
-                        >In progress</span
-                      >
+                      <span class="badge bg-warning text-center">In progress</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      Vanessa Tucker
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">Vanessa Tucker</td>
                   </tr>
                   <tr>
                     <td>Project Phoenix</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">27</td>
                     <td>
                       <span class="badge bg-success text-center">Done</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      William Harris
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">William Harris</td>
                   </tr>
                   <tr>
                     <td>Project X</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">26</td>
                     <td>
                       <span class="badge bg-success text-center">Done</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      Sharon Lessman
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">Sharon Lessman</td>
                   </tr>
                   <tr>
                     <td>Project Romeo</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">22</td>
                     <td>
                       <span class="badge bg-success text-center">Done</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      Christina Mason
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">Christina Mason</td>
                   </tr>
                   <tr>
                     <td>Project Wombat</td>
-                    <td class="d-none d-xl-table-cell text-center">
-                      01/01/2020
-                    </td>
+                    <td class="d-none d-xl-table-cell text-center">01/01/2020</td>
                     <td class="d-none d-xl-table-cell text-center">21</td>
                     <td>
-                      <span class="badge bg-warning text-center"
-                        >In progress</span
-                      >
+                      <span class="badge bg-warning text-center">In progress</span>
                     </td>
-                    <td class="d-none d-md-table-cell text-center">
-                      William Harris
-                    </td>
+                    <td class="d-none d-md-table-cell text-center">William Harris</td>
                   </tr>
                 </tbody>
               </table>
@@ -358,9 +308,11 @@ export default {
 </script>
 <style>
 #map-svg {
-  width: 60%;
+  width: 80%;
   text-align: center;
 }
-
+#admin1 > path:hover {
+  fill: #69a4d8;
+  cursor: pointer;
+}
 </style>
-

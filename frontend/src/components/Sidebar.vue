@@ -31,12 +31,26 @@
           </li>
 
           <li class="sidebar-item">
+            <a class="sidebar-link" href="/editor2">
+              <i class="align-middle" data-feather="edit-3"></i>
+              <span class="align-middle">Editor 2</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/editor3">
+              <i class="align-middle" data-feather="edit-3"></i>
+              <span class="align-middle">Editor 3</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
             <a class="sidebar-link" href="/blogs-all">
               <i class="align-middle" data-feather="book"></i>
               <span class="align-middle">All Blogs</span>
             </a>
           </li>
-          
+
           <li class="sidebar-item">
             <a class="sidebar-link" href="/chart">
               <i class="align-middle" data-feather="pie-chart"></i>
@@ -64,8 +78,7 @@
           <div class="sidebar-cta-content">
             <strong class="d-inline-block mb-2">Upgrade to Pro</strong>
             <div class="mb-3 text-sm">
-              Are you looking for more components? Check out our premium
-              version.
+              Are you looking for more components? Check out our premium version.
             </div>
             <a
               href="https://adminkit.io/pricing"
